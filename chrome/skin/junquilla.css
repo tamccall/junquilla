@@ -1,0 +1,14 @@
+#threadTree treechildren::-moz-tree-image(junkStatusCol, notjunk) {
+  list-style-image: url("chrome://junquilla/skin/unreadmail.png") !important;
+  -moz-padding-start: 0px !important;
+}
+
+#folderTree treechildren::-moz-tree-image(folderNameCol, junquillaUncertain, hasMessages-true) {
+  list-style-image: url("chrome://junquilla/skin/junkquestion.png");
+  font-weight: bold;
+}
+
+#folderTree treechildren::-moz-tree-image(folderNameCol, junquillaUncertain, hasMessages-false) {
+  list-style-image: url("chrome://junquilla/skin/unreadmail.png");
+  font-weight: normal;
+}

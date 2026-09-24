@@ -1,0 +1,13 @@
+<!ENTITY colJunkPercent.label "Junk &#037;">
+<!ENTITY colJunkPercent.tooltiptext "Click to sort by Junk &#037;">
+<!ENTITY junkStatusPlus.label "Junk Status +">
+<!ENTITY junkStatusPlus.tooltiptext "Click to sort by Junk Status +">
+<!ENTITY junquilla.maximumJunkTokens "Maximum junk tokens">
+<!ENTITY junquilla.junkThreshold "Junk threshold">
+<!ENTITY junquilla.uncertainFolders "Uncertain folders">
+<!ENTITY junquilla.add "Add">
+<!ENTITY junquilla.remove "Remove">
+<!ENTITY junquilla.detailTitle "Junk Analysis Detail">
+<!ENTITY junquilla.token "Token">
+<!ENTITY junquilla.tokenPercent "Token &#037;">
+<!ENTITY junquilla.runningPercent "Running &#037;">
