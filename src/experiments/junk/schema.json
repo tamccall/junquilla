@@ -1,0 +1,14 @@
+[
+  {
+    "namespace": "junquillaJunk",
+    "functions": [
+      {
+        "name": "getJunkDetail",
+        "type": "function",
+        "async": true,
+        "description": "Returns the subject and the adaptive filter's per-token analysis for one message.",
+        "parameters": [{ "name": "messageId", "type": "integer", "minimum": 1 }]
+      }
+    ]
+  }
+]

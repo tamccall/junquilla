@@ -1,0 +1,14 @@
+[
+  {
+    "namespace": "junquillaSetup",
+    "functions": [
+      {
+        "name": "runFirstRunIfNeeded",
+        "type": "function",
+        "async": true,
+        "description": "Applies the first-run defaults once. Resolves to \"ran\", \"skipped-installed\" or \"skipped-upgrade\".",
+        "parameters": [{ "name": "uncertainName", "type": "string" }]
+      }
+    ]
+  }
+]

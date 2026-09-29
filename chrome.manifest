@@ -1,4 +1,0 @@
-content     junquilla chrome/content/
-overlay     chrome://messenger/content/messenger.xul chrome://junquilla/content/junquillaOverlay.xul
-skin        junquilla classic   chrome/skin/
-locale      junquilla en-US     chrome/locale/en-US/

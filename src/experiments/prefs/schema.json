@@ -1,0 +1,24 @@
+[
+  {
+    "namespace": "junquillaPrefs",
+    "functions": [
+      {
+        "name": "get",
+        "type": "function",
+        "async": true,
+        "description": "Reads an allow-listed Thunderbird pref. Resolves to null when the pref has no value.",
+        "parameters": [{ "name": "name", "type": "string" }]
+      },
+      {
+        "name": "set",
+        "type": "function",
+        "async": true,
+        "description": "Writes an allow-listed integer junk filter pref, as entered (no range check).",
+        "parameters": [
+          { "name": "name", "type": "string" },
+          { "name": "value", "type": "any" }
+        ]
+      }
+    ]
+  }
+]

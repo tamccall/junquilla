@@ -1,0 +1,110 @@
+{
+  "extensionName": {
+    "message": "JunQuilla",
+    "description": "Add-on name."
+  },
+  "extensionDescription": {
+    "message": "Junk mail management by Mesquilla",
+    "description": "Add-on description shown in the Add-ons Manager."
+  },
+  "colJunkPercentLabel": {
+    "message": "Junk %",
+    "description": "Message list column showing the junk score."
+  },
+  "colJunkStatusPlusLabel": {
+    "message": "Junk Status +",
+    "description": "Message list icon column showing junk verdict and its source."
+  },
+  "detailTitle": {
+    "message": "Junk Analysis Detail",
+    "description": "Menu item and window title for the token-level junk analysis."
+  },
+  "detailToken": {
+    "message": "Token",
+    "description": "Detail table column header: the token text."
+  },
+  "detailTokenPercent": {
+    "message": "Token %",
+    "description": "Detail table column header: junk probability of this token."
+  },
+  "detailRunningPercent": {
+    "message": "Running %",
+    "description": "Detail table column header: cumulative junk probability."
+  },
+  "optMaxTokens": {
+    "message": "Maximum junk tokens",
+    "description": "Options label for the junk filter's maximum token count."
+  },
+  "optJunkThreshold": {
+    "message": "Junk threshold",
+    "description": "Options label for the junk filter's threshold."
+  },
+  "optUncertainFolders": {
+    "message": "Uncertain folders",
+    "description": "Options group heading for adding/removing Uncertain folders."
+  },
+  "optAdd": {
+    "message": "Add",
+    "description": "Button that adds Uncertain folders."
+  },
+  "optRemove": {
+    "message": "Remove",
+    "description": "Button that removes Uncertain folders."
+  },
+  "uncertainFolderName": {
+    "message": "Uncertain",
+    "description": "Name of the saved-search folder created under each Inbox."
+  },
+  "status_good": {
+    "message": "Good",
+    "description": "Junk Status + text: good, no known source."
+  },
+  "status_goodbayes": {
+    "message": "Good (adaptive filter)",
+    "description": "Junk Status + text: good, set by the adaptive filter."
+  },
+  "status_goodfilter": {
+    "message": "Good (message filter)",
+    "description": "Junk Status + text: good, set by a message filter."
+  },
+  "status_goodflag": {
+    "message": "Good (server flag)",
+    "description": "Junk Status + text: good, set by an IMAP server flag."
+  },
+  "status_gooduser": {
+    "message": "Good (user)",
+    "description": "Junk Status + text: good, set by the user."
+  },
+  "status_goodwhite": {
+    "message": "Good (address book)",
+    "description": "Junk Status + text: good, sender is in the address book."
+  },
+  "status_junk": {
+    "message": "Junk",
+    "description": "Junk Status + text: junk, no known source."
+  },
+  "status_junkbayes": {
+    "message": "Junk (adaptive filter)",
+    "description": "Junk Status + text: junk, set by the adaptive filter."
+  },
+  "status_junkfilter": {
+    "message": "Junk (message filter)",
+    "description": "Junk Status + text: junk, set by a message filter."
+  },
+  "status_junkflag": {
+    "message": "Junk (server flag)",
+    "description": "Junk Status + text: junk, set by an IMAP server flag."
+  },
+  "status_junkuser": {
+    "message": "Junk (user)",
+    "description": "Junk Status + text: junk, set by the user."
+  },
+  "status_junkwhite": {
+    "message": "Junk (address book)",
+    "description": "Junk Status + text: junk, address book origin."
+  },
+  "status_unclassified": {
+    "message": "Unclassified",
+    "description": "Junk Status + text: not classified."
+  }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title data-i18n="detailTitle"></title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      font: message-box;
+    }
+    h1 {
+      font-size: 1.1em;
+      margin: 0.5em;
+    }
+    #scroller {
+      flex: 1;
+      overflow: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th {
+      position: sticky;
+      top: 0;
+      background: Canvas;
+      text-align: start;
+      border-bottom: 1px solid GrayText;
+    }
+    th, td {
+      padding: 0.15em 0.5em;
+    }
+    td:not(:first-child) {
+      text-align: end;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="subject"></h1>
+  <div id="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th data-i18n="detailToken"></th>
+          <th data-i18n="detailTokenPercent"></th>
+          <th data-i18n="detailRunningPercent"></th>
+        </tr>
+      </thead>
+      <tbody id="tokens"></tbody>
+    </table>
+  </div>
+  <script src="detail.js"></script>
+</body>
+</html>

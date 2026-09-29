@@ -1,0 +1,27 @@
+/* Author sheet loaded into about:3pane by junquillaFolders.
+ * Ports chrome/skin/junquilla.css from 0.2 to the 140 folder-tree-row markup:
+ *   li[is="folder-tree-row"] > .container > .icon, .name, .unread-count, .total-count
+ * Rows are tagged with data-junquilla-uncertain and data-junquilla-has-messages. */
+
+/* Always show the counts, even when the folder pane's total-count option is
+ * off. Thunderbird hides the label with the hidden attribute, so "revert"
+ * would fall back to the UA [hidden] rule; set the display explicitly. */
+li[data-junquilla-uncertain] > .container .total-count {
+  display: inline-block !important;
+}
+
+li[data-junquilla-uncertain][data-junquilla-has-messages="true"] > .container .icon {
+  content: url("../../icons/junkquestion.png");
+}
+
+li[data-junquilla-uncertain][data-junquilla-has-messages="true"] > .container .name {
+  font-weight: bold;
+}
+
+li[data-junquilla-uncertain][data-junquilla-has-messages="false"] > .container .icon {
+  content: url("../../icons/unreadmail.png");
+}
+
+li[data-junquilla-uncertain][data-junquilla-has-messages="false"] > .container .name {
+  font-weight: normal;
+}

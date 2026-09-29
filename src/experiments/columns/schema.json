@@ -1,0 +1,35 @@
+[
+  {
+    "namespace": "junquillaColumns",
+    "functions": [
+      {
+        "name": "register",
+        "type": "function",
+        "async": true,
+        "description": "Adds the Junk % and Junk Status + message list columns. Idempotent.",
+        "parameters": [
+          {
+            "name": "labels",
+            "type": "object",
+            "properties": {
+              "junkPercentName": { "type": "string" },
+              "junkStatusName": { "type": "string" },
+              "statusText": {
+                "type": "object",
+                "optional": true,
+                "additionalProperties": { "type": "string" }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "unregister",
+        "type": "function",
+        "async": true,
+        "description": "Removes both columns and all listeners.",
+        "parameters": []
+      }
+    ]
+  }
+]

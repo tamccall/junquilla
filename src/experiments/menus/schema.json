@@ -1,0 +1,22 @@
+[
+  {
+    "namespace": "junquillaMenus",
+    "functions": [
+      {
+        "name": "addMessageMenuItem",
+        "type": "function",
+        "async": true,
+        "description": "Adds the Junk Analysis Detail item to the Message menu of every messenger window. Idempotent.",
+        "parameters": [{ "name": "label", "type": "string" }]
+      }
+    ],
+    "events": [
+      {
+        "name": "onMessageMenuDetail",
+        "type": "function",
+        "description": "Fired when the Message menu item is chosen.",
+        "parameters": []
+      }
+    ]
+  }
+]

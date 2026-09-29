@@ -1,0 +1,20 @@
+{
+  "name": "junquilla",
+  "version": "1.0.0",
+  "description": "Junk mail management for Thunderbird",
+  "private": true,
+  "type": "module",
+  "license": "GPL-3.0-or-later",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test tests/",
+    "build": "scripts/build.sh",
+    "lint": "addons-linter dist/junquilla-$(node -p \"require('./src/manifest.json').version\").xpi",
+    "check": "scripts/check-review-rules.sh"
+  },
+  "devDependencies": {
+    "addons-linter": "10.13.0"
+  }
+}

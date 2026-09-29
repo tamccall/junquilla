@@ -1,0 +1,122 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extensionName__",
+  "description": "__MSG_extensionDescription__",
+  "version": "1.0.0",
+  "author": "R Kent James",
+  "homepage_url": "http://mesquilla.com/extensions/junquilla",
+  "default_locale": "en",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "junquilla@mesquilla.com",
+      "strict_min_version": "115.0",
+      "strict_max_version": "140.*"
+    }
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "type": "module"
+  },
+  "permissions": [
+    "menus",
+    "messagesRead"
+  ],
+  "icons": {
+    "16": "icons/junk.png"
+  },
+  "experiment_apis": {
+    "junquillaColumns": {
+      "schema": "experiments/columns/schema.json",
+      "parent": {
+        "scopes": [
+          "addon_parent"
+        ],
+        "paths": [
+          [
+            "junquillaColumns"
+          ]
+        ],
+        "script": "experiments/columns/implementation.js"
+      }
+    },
+    "junquillaFolders": {
+      "schema": "experiments/folders/schema.json",
+      "parent": {
+        "scopes": [
+          "addon_parent"
+        ],
+        "paths": [
+          [
+            "junquillaFolders"
+          ]
+        ],
+        "script": "experiments/folders/implementation.js",
+        "events": [
+          "startup"
+        ]
+      }
+    },
+    "junquillaJunk": {
+      "schema": "experiments/junk/schema.json",
+      "parent": {
+        "scopes": [
+          "addon_parent"
+        ],
+        "paths": [
+          [
+            "junquillaJunk"
+          ]
+        ],
+        "script": "experiments/junk/implementation.js"
+      }
+    },
+    "junquillaMenus": {
+      "schema": "experiments/menus/schema.json",
+      "parent": {
+        "scopes": [
+          "addon_parent"
+        ],
+        "paths": [
+          [
+            "junquillaMenus"
+          ]
+        ],
+        "script": "experiments/menus/implementation.js"
+      }
+    },
+    "junquillaPrefs": {
+      "schema": "experiments/prefs/schema.json",
+      "parent": {
+        "scopes": [
+          "addon_parent"
+        ],
+        "paths": [
+          [
+            "junquillaPrefs"
+          ]
+        ],
+        "script": "experiments/prefs/implementation.js"
+      }
+    },
+    "junquillaSetup": {
+      "schema": "experiments/setup/schema.json",
+      "parent": {
+        "scopes": [
+          "addon_parent"
+        ],
+        "paths": [
+          [
+            "junquillaSetup"
+          ]
+        ],
+        "script": "experiments/setup/implementation.js"
+      }
+    }
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": false
+  }
+}

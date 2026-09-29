@@ -1,0 +1,28 @@
+[
+  {
+    "namespace": "junquillaFolders",
+    "functions": [
+      {
+        "name": "addUncertain",
+        "type": "function",
+        "async": true,
+        "description": "Creates a marked Uncertain saved search under each Inbox that has none.",
+        "parameters": [{ "name": "name", "type": "string" }]
+      },
+      {
+        "name": "removeUncertain",
+        "type": "function",
+        "async": true,
+        "description": "Deletes every marked Uncertain folder.",
+        "parameters": []
+      },
+      {
+        "name": "listUncertain",
+        "type": "function",
+        "async": true,
+        "description": "Re-scans for marked Uncertain folders, refreshes the folder pane styling, and returns their URIs.",
+        "parameters": []
+      }
+    ]
+  }
+]
